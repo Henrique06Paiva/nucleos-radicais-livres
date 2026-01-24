@@ -45,10 +45,10 @@ nav .menu {
 }
 
 nav .logo img {
-  width: 60px;
+  width: 100px;
   height: auto;
   margin-right: 16px;
-  margin-left: 16px;
+  margin-left: 24px;
 }
 
 nav .menu li {
@@ -127,8 +127,99 @@ nav .menu-mobile span {
   margin: 0 auto;
   color: #fff;
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
+}
+
+.nucleos-radicais {
+  background-color: var(--secondary-color);
+  background-image: url("../public/img/fundo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--primary-color);
+  padding: 20px;
+}
+
+.nucleos-radicais h2 {
+  font-family: "Calibri", sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 20px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nucleos-radicais h3 {
+  font-family: "Calibri", sans-serif;
+  font-size: 32px;
+  font-weight: normal;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 20px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nucleos-radicais p {
+  font-family: "Climate Crisis", cursive;
+  font-size: 48px;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  padding: 20px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 0.07em;
+  line-height: 1.5;
+}
+
+.nucleos-radicais a {
+  font-size: 20px;
+  font-family: "Pangolin", cursive;
+  color: var(--tertiary-color); /* laranja */
+  text-decoration: none;
+  font-weight: bold;
+  padding: 16px 40px;
+
+  /* Fundo transparente com borda */
+  background-color: transparent;
+  border: 3px solid var(--tertiary-color);
+  border-radius: 50px; /* pill shape */
+
+  /* Efeito glow */
+  box-shadow:
+    0 0 15px rgba(255, 91, 10, 0.4),
+    inset 0 0 15px rgba(255, 91, 10, 0.1);
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  max-width: 200px;
+  text-align: center;
+}
+
+.nucleos-radicais a:hover {
+  background-color: var(--tertiary-color);
+  color: #fff;
+  box-shadow: 0 0 25px rgba(255, 91, 10, 0.6);
+  text-decoration: none;
+  font-weight: bold;
 }
