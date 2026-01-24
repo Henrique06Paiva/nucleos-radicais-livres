@@ -1,0 +1,66 @@
+/* ========================================
+   PAGES.CSS - Estilos compartilhados das páginas secundárias
+   ======================================== */
+
+/* ========================================
+   HEADER DAS PÁGINAS
+   ======================================== */
+.page-header {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 60px 20px;
+  text-align: center;
+  margin-top: -100px;
+  padding-top: 160px;
+}
+
+.page-header h1 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: var(--tertiary-color);
+}
+
+.page-header p {
+  font-family: "Pangolin", cursive;
+  font-size: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ========================================
+   CONTEÚDO DAS PÁGINAS
+   ======================================== */
+.page-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.page-content h2 {
+  font-family: "Pangolin", cursive;
+  font-size: 32px;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+
+.page-content p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* ========================================
+   SEÇÕES ALTERNADAS
+   ======================================== */
+.section-dark {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 60px 20px;
+}
+
+.section-light {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 60px 20px;
+}

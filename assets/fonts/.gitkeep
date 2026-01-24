@@ -1,0 +1,22 @@
+# Pasta para fontes locais
+# 
+# Se quiser usar fontes offline, baixe os arquivos .woff2 do Google Fonts
+# e coloque aqui. Exemplo de estrutura:
+#
+# fonts/
+#   ├── PermanentMarker/
+#   │   └── PermanentMarker-Regular.woff2
+#   ├── Pangolin/
+#   │   └── Pangolin-Regular.woff2
+#   └── ClimateCrisis/
+#       └── ClimateCrisis-Regular.woff2
+#
+# Depois, importe no CSS usando @font-face:
+#
+# @font-face {
+#   font-family: 'Permanent Marker';
+#   src: url('../fonts/PermanentMarker/PermanentMarker-Regular.woff2') format('woff2');
+#   font-weight: normal;
+#   font-style: normal;
+#   font-display: swap;
+# }
