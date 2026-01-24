@@ -1,7 +1,7 @@
 :root {
   --primary-color: #d1d1d1;
   --secondary-color: #000000;
-  --tertiary-color: #fff;
+  --tertiary-color: #ff5b0a;
   --quaternary-color: #000;
   --quinary-color: #f00;
   --senary-color: #0f0;
@@ -17,15 +17,25 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
+  padding-top: 100px;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 12px 24px;
   background-color: var(--secondary-color);
   color: var(--tertiary-color);
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 48px);
+  max-width: 1000px;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
 }
 
 nav .logo {
@@ -45,15 +55,23 @@ nav .logo img {
 
 nav .menu li {
   list-style: none;
+  display: inline-block;
+  margin-right: 40px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 nav .menu li a {
-  color: var(--tertiary-color);
+  color: var(--primary-color);
   text-decoration: none;
+  transition: color 0.5s ease;
 }
 
 nav .menu li a:hover {
-  color: var(--quaternary-color);
+  color: var(--tertiary-color);
+  transition: color 0.5s ease;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 nav .menu-mobile {
