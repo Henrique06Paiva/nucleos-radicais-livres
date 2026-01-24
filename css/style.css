@@ -1,6 +1,6 @@
-root {
+:root {
   --primary-color: #d1d1d1;
-  --secondary-color: #1a2035;
+  --secondary-color: #000000;
   --tertiary-color: #fff;
   --quaternary-color: #000;
   --quinary-color: #f00;
@@ -38,6 +38,11 @@ nav .menu {
   gap: 20px;
 }
 
+nav .logo img {
+  width: 100px;
+  height: auto;
+}
+
 nav .menu li {
   list-style: none;
 }
@@ -58,7 +63,7 @@ nav .menu-mobile {
 nav .menu-mobile span {
   width: 20px;
   height: 2px;
-  background-color: var(--tertiary-color);
+  background-color: var(--secondary-color);
 }
 
 @media (max-width: 768px) {
