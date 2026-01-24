@@ -1,0 +1,22 @@
+# Sistema
+.DS_Store
+Thumbs.db
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Dependências (se usar npm no futuro)
+node_modules/
+package-lock.json
+
+# Build (se usar no futuro)
+dist/
+build/
+
+# Arquivos temporários
+*.tmp
+*.temp
