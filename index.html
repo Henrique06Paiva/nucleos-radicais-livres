@@ -4,8 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nucleos Radicais Livres</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/responsive.css" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/home.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,29 +19,43 @@
     />
   </head>
   <body>
+    <!-- Navbar -->
     <nav>
       <div class="logo">
-        <img src="./public/img/logo-radicais.png" alt="Logo" />
+        <img src="./assets/images/logo/logo-radicais.png" alt="Logo Radicais Livres" />
       </div>
       <div class="menu">
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="./sobre/sobre.html">Sobre</a></li>
-          <li><a href="./contato/contato.html">Conecte-se</a></li>
-          <li><a href="./nucleos/nucleos.html">Nucleos</a></li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./pages/sobre.html">Sobre</a></li>
+          <li><a href="./pages/contato.html">Conecte-se</a></li>
+          <li><a href="./pages/nucleos.html">Nucleos</a></li>
         </ul>
       </div>
-      <div class="menu-mobile">
+      <div class="menu-mobile" id="menuHamburger">
         <span></span>
         <span></span>
         <span></span>
       </div>
     </nav>
 
+    <!-- Menu Mobile Fullscreen -->
+    <div class="menu-mobile-nav" id="menuMobileNav">
+      <span class="close-menu" id="closeMenu">&times;</span>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./pages/sobre.html">Sobre</a></li>
+        <li><a href="./pages/contato.html">Conecte-se</a></li>
+        <li><a href="./pages/nucleos.html">Nucleos</a></li>
+      </ul>
+    </div>
+
+    <!-- Hero Section -->
     <section class="home" id="home">
       <h1>O espírito que nos guia à ousadia para os dias de hoje</h1>
     </section>
 
+    <!-- Nucleos Radicais Section -->
     <section class="nucleos-radicais">
       <h2>
         Os nucleos radicais são um movimento cujo foco é o avivamento
@@ -44,14 +63,14 @@
       </h2>
       <h3>Nosso propósito é</h3>
       <p>
-        DESPERTAR UMA GERAÇÃO PARA <img src="" alt="" srcset="" /> QUE ELA VENHA
-        ESTABELECER O REINO <img src="" alt="" srcset="" /> DE DEUS E ASSIM
-        TRANSFORMAR A SOCIEDADE AO SEU <img src="" alt="" srcset="" /> REDOR.
-        <img src="" alt="" srcset="" />
+        DESPERTAR UMA GERAÇÃO PARA QUE ELA VENHA
+        ESTABELECER O REINO DE DEUS E ASSIM
+        TRANSFORMAR A SOCIEDADE AO SEU REDOR.
       </p>
 
-      <a href="./sobre/sobre.html">Saiba mais! ➜</a>
+      <a href="./pages/sobre.html">Saiba mais! ➜</a>
     </section>
-    <script src="./js/main.js"></script>
+
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
