@@ -47,9 +47,10 @@
 }
 
 .nucleos-radicais h2 {
-  font-family: "Calibri", sans-serif;
+  font-family: "Permanent Marker", cursive;
+  font-style: normal;
   font-size: 24px;
-  font-weight: normal;
+  font-weight: 400;
   color: var(--primary-color);
   text-align: center;
   margin-bottom: 20px;
@@ -90,12 +91,12 @@
 }
 
 .nucleos-radicais a {
-  font-size: 20px;
+  font-size: 32px;
   font-family: "Pangolin", cursive;
   color: var(--tertiary-color);
   text-decoration: none;
   font-weight: bold;
-  padding: 16px 40px;
+  padding: 24px 60px;
   background-color: transparent;
   border: 3px solid var(--tertiary-color);
   border-radius: 50px;
@@ -107,9 +108,9 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 40px;
-  margin-top: 40px;
-  max-width: 200px;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  max-width: 350px;
   text-align: center;
 }
 
