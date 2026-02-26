@@ -11,40 +11,40 @@ document.addEventListener("DOMContentLoaded", function () {
   const closeMenu = document.getElementById("closeMenu");
   const menuLinks = document.querySelectorAll(".menu-mobile-nav ul li a");
 
+  function openMenu() {
+    menuMobileNav.classList.add("active");
+    menuHamburger.classList.add("active");
+    document.body.classList.add("menu-open");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeMenuFn() {
+    menuMobileNav.classList.remove("active");
+    menuHamburger.classList.remove("active");
+    document.body.classList.remove("menu-open");
+    document.body.style.overflow = "";
+  }
+
   // Abrir menu
   if (menuHamburger) {
-    menuHamburger.addEventListener("click", function () {
-      menuMobileNav.classList.add("active");
-      menuHamburger.classList.add("active");
-      document.body.style.overflow = "hidden"; // Bloqueia scroll
-    });
+    menuHamburger.addEventListener("click", openMenu);
   }
 
   // Fechar menu pelo X
   if (closeMenu) {
-    closeMenu.addEventListener("click", function () {
-      menuMobileNav.classList.remove("active");
-      menuHamburger.classList.remove("active");
-      document.body.style.overflow = ""; // Libera scroll
-    });
+    closeMenu.addEventListener("click", closeMenuFn);
   }
 
   // Fechar menu ao clicar em um link
   menuLinks.forEach(function (link) {
-    link.addEventListener("click", function () {
-      menuMobileNav.classList.remove("active");
-      menuHamburger.classList.remove("active");
-      document.body.style.overflow = "";
-    });
+    link.addEventListener("click", closeMenuFn);
   });
 
   // Fechar menu ao clicar fora
   if (menuMobileNav) {
     menuMobileNav.addEventListener("click", function (e) {
       if (e.target === menuMobileNav) {
-        menuMobileNav.classList.remove("active");
-        menuHamburger.classList.remove("active");
-        document.body.style.overflow = "";
+        closeMenuFn();
       }
     });
   }
@@ -52,9 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Fechar menu com tecla ESC
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape" && menuMobileNav.classList.contains("active")) {
-      menuMobileNav.classList.remove("active");
-      menuHamburger.classList.remove("active");
-      document.body.style.overflow = "";
+      closeMenuFn();
     }
   });
 });
