@@ -328,3 +328,9 @@ body.menu-open nav {
     max-width: 300px;
   }
 }
+
+@media (max-width: 768px) {
+  .home::after {
+    background-image: url("../images/backgrounds/raios-1.png");
+  }
+}
