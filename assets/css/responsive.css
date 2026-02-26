@@ -322,3 +322,9 @@ body.menu-open nav {
     padding: 10px 24px;
   }
 }
+
+@media (max-width: 600px) {
+  .nucleos-radicais-titulo-img {
+    max-width: 300px;
+  }
+}
